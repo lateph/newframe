@@ -1,2 +1,72 @@
 page-login {
+    .scroll-content{
+        background-image: url(../assets/imgs/2.jpg);
+        background-size: cover;
+        background-position: center center;
+        // background-color: red;
+        form{
+            //overflow: auto;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 100%;
+            width: 100%;
+            ion-item{
+                background: none;
+                padding-left: 0px;
+            }
+            input {
+                // background-color: rgba(255,255,255,0);
+                // color: #FFFFFF;
+                // transition: all 250ms ease;
+            }
+            ion-label[fixed] {
+                -webkit-box-flex: 0;
+                -webkit-flex: 0 0 20px;
+                -ms-flex: 0 0 20px;
+                flex: 0 0 20px;
+                min-width: 20px;
+                max-width: 200px;
+            }
+            .page-login-forgot {
+                float: left;                
+                font-size: 12px;
+                height: 50px;
+                line-height: 50px;
+                ion-icon{
+                    padding-right: 10px;
+                }
+            }
+            .page-login-forgot {
+                color: #969696;
+            }
+            .page-login-create {
+                float: right;
+                font-size: 12px;
+                height: 50px;
+                line-height: 50px;
+                ion-icon{
+                    padding-left: 10px;
+                }
+            }
+            .page-login-create {
+                color: #969696;
+            }
+            .clear {
+                clear: both!important;
+            }
+            button{
+                ion-icon{
+                    width: 50px;
+                    line-height: 50px!important;
+                    height: 100%;
+                    top: 0px;
+                    left: 0px;
+                    position: absolute;
+                    font-size: 16px;
+                    background-color: rgba(0,0,0,0.1);
+                }
+            }
+        }
+    }
 }

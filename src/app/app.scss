@@ -14,3 +14,19 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.dark-overlay {
+    background-color: rgba(0,0,0,0.7);
+}
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 9;
+}
+.page-fullscreen-content{
+    position: absolute;
+    z-index: 99;
+    overflow: hidden;
+}
