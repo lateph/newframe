@@ -34,19 +34,20 @@ $colors: (
 
 $text-input-highlight-color-valid: rgba(255,255,255,0.1);
 $text-color:#FFFFFF;
-$item-md-font-size	: 12px;
 $font-family-base : -apple-system, "Helvetica Neue", "Arial", sans-serif;
 $font-family-md-base : "Helvetica Neue", "Arial", sans-serif;
-$button-md-border-radius : 0px;
-$button-md-height: 50px;
-$button-md-font-size: 12px;
-$button-md-font-weight: 400;
-$button-md-text-transform	:none;
+$toolbar-background: #0c1117;
+$background-color: #0c1117;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
+$item-ios-font-size	: 12px;
+$button-ios-border-radius : 0px;
+$button-ios-height: 50px;
+$button-ios-font-size: 12px;
+$button-ios-font-weight: 400;
+$button-ios-text-transform	:none;
 
 
 // App Material Design Variables
@@ -54,8 +55,16 @@ $button-md-text-transform	:none;
 // Material Design only Sass variables can go here
 
 
-
-
+$item-md-font-size	: 12px;
+$button-md-border-radius : 0px;
+$button-md-height: 50px;
+$button-md-font-size: 12px;
+$button-md-font-weight: 400;
+$button-md-text-transform	:none;
+$tabs-background : #0c1117;
+$tabs-tab-color-inactive: #FFFFFF;
+$tabs-md-tab-icon-color-active:white;
+$tabs-md-tab-icon-color: white;
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

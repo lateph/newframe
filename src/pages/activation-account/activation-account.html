@@ -1,7 +1,7 @@
 <ion-header>
   
     <ion-navbar>
-      <ion-title>{{ 'FORGET_PASSOWRD_TITLE' | translate }}</ion-title>
+      <ion-title>{{ 'VALIDATION_TITLE' | translate }}</ion-title>
     </ion-navbar>
   
   </ion-header>
@@ -9,17 +9,21 @@
   
   <ion-content>
     <form (submit)="doLogin()">
-      <ion-list>
-  
+      <ion-list no-lines>
+        <div class="heading-text">
+            <h4>{{ 'TEXT_VALIDATION_SENT' | translate }} </h4>
+        </div>
+
         <ion-item>
-          <ion-label fixed>{{ 'VERIFICATION_CODE' | translate }}</ion-label>
-          <ion-input type="email" [(ngModel)]="code" name="email"></ion-input>
+          <ion-input type="email" [(ngModel)]="code" name="email" placeholder="{{ 'VERIFICATION_CODE' | translate }}"></ion-input>
         </ion-item>
   
-        <div padding>
-          <button ion-button color="primary" block>{{ 'SUBMIT' | translate }}</button>
+        <div>
+          <button ion-button color="primary" block><ion-icon name="ios-arrow-forward"></ion-icon>{{ 'SUBMIT' | translate }}</button>
         </div>
   
       </ion-list>
     </form>
+    <div class="overlay dark-overlay"></div>
+    
   </ion-content>

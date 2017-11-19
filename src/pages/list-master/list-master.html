@@ -1,11 +1,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ 'LIST_MASTER_TITLE' | translate }}</ion-title>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
 
+    <ion-title>{{ 'LIST_MASTER_TITLE' | translate }}</ion-title>
+    
     <ion-buttons end>
       <button ion-button icon-only (click)="addItem()">
-        <ion-icon name="add"></ion-icon>
+        <ion-icon name="cart"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
@@ -13,23 +17,138 @@
 </ion-header>
 
 <ion-content>
+  <ion-slides class="slide1">
+      <ion-slide>
+        <em class="bg-red-dark">$19<u>99</u></em>
+        <img class="responsive-image" src="assets/pictures/1.jpg" alt="img">
+        <h3>Buy one get one free!</h3>
+      </ion-slide>
+      <ion-slide>
+          <em class="bg-green-dark">$29<u>99</u></em>
+          <img class="responsive-image" src="assets/pictures/2.jpg" alt="img">
+          <h3>Last minute offer!</h3>
+      </ion-slide>
+      <ion-slide>
+          <em class="bg-blue-dark">$99<u>99</u></em>
+          <img class="responsive-image" src="assets/pictures/3.jpg" alt="img">
+          <h3>Best Selling Item</h3>
+      </ion-slide>
+    </ion-slides>
 
-  <ion-list>
-    <ion-item-sliding *ngFor="let item of currentItems">
-      <button ion-item (click)="openItem(item)">
-        <ion-avatar item-start>
-          <img [src]="item.profilePic" />
-        </ion-avatar>
-        <h2>{{item.name}}</h2>
-        <p>{{item.about}}</p>
-        <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
-      </button>
+    <p class="category-title">
+        Browse by Category
+        <a href="#">See All</a>
+    </p>
 
-      <ion-item-options>
-        <button ion-button color="danger" (click)="deleteItem(item)">
-          {{ 'DELETE_BUTTON' | translate }}
-        </button>
-      </ion-item-options>
-    </ion-item-sliding>
-  </ion-list>
+    <div class="clear"></div>
+
+  <ion-slides slidesPerView="2" spaceBetween="5" class="slide2">
+    <ion-slide>
+        <u>Today's <br> offers</u>
+        <img class="responsive-image" src="assets/pictures/3t.jpg" alt="img">
+        <em class="overlay bg-blue-dark"></em>
+    </ion-slide>
+    <ion-slide>
+        <u>Best <br> deals</u>
+        <img class="responsive-image" src="assets/pictures/1t.jpg" alt="img">
+        <em class="overlay bg-magenta-dark"></em>
+    </ion-slide>
+    <ion-slide>
+        <u>Second <br> hand</u>
+        <img class="responsive-image" src="assets/pictures/2t.jpg" alt="img">
+        <em class="overlay bg-orange-dark"></em>
+    </ion-slide>
+  </ion-slides>
+
+    <p class="category-title">
+        Weekly Featured
+        <a href="#">See All</a>
+    </p>
+    <div class="clear"></div>
+
+    <ion-slides slidesPerView="3" spaceBetween="5" class="slide3">
+        <ion-slide>
+            <img class="responsive-image" src="assets/pictures/3t.jpg" alt="img">
+            <em>Bread and Butter</em>
+            <strong>$55.30</strong>
+            <u class="color-green-dark">Free Shipping</u>
+        </ion-slide>
+        <ion-slide>
+            <img class="responsive-image" src="assets/pictures/2t.jpg" alt="img">
+            <em>Frying Pans</em>
+            <strong>$55.30</strong>
+            <u class="color-blue-dark">5% Discount</u>
+        </ion-slide>
+        <ion-slide>
+            <img class="responsive-image" src="assets/pictures/1t.jpg" alt="img">
+            <em>Fruit Pie</em>
+            <strong>$55.30</strong>
+            <u class="color-red-dark">Expires Soon</u>
+        </ion-slide>
+        <ion-slide>
+            <img class="responsive-image" src="assets/pictures/3t.jpg" alt="img">
+            <em>Bread and Butter</em>
+            <strong>$55.30</strong>
+            <u class="color-green-dark">Free Shipping</u>
+        </ion-slide>
+        <ion-slide>
+            <img class="responsive-image" src="assets/pictures/2t.jpg" alt="img">
+            <em>Frying Pans</em>
+            <strong>$55.30</strong>
+            <u class="color-blue-dark">5% Discount</u>
+        </ion-slide>
+        <ion-slide>
+            <img class="responsive-image" src="assets/pictures/1t.jpg" alt="img">
+            <em>Fruit Pie</em>
+            <strong>$55.30</strong>
+            <u class="color-red-dark">Expires Soon</u>
+        </ion-slide>
+    </ion-slides>
+
+    <p class="category-title">  
+        Best Sellers
+        <a href="#">See All</a>
+    </p>
+    <div class="clear"></div>
+    
+    <ion-slides slidesPerView="3" spaceBetween="5" class="slide3">
+            <ion-slide>
+                <img class="responsive-image" src="assets/pictures/4t.jpg" alt="img">
+                <em>Highway Drive</em>
+                <strong>$55.30</strong>
+                <u class="color-green-dark">Free Shipping</u>
+            </ion-slide>
+            <ion-slide>
+                <img class="responsive-image" src="assets/pictures/5t.jpg" alt="img">
+                <em>Ocean Escape</em>
+                <strong>$55.30</strong>
+                <u class="color-blue-dark">5% Discount</u>
+            </ion-slide>
+            <ion-slide>
+                <img class="responsive-image" src="assets/pictures/6t.jpg" alt="img">
+                <em>Skate Parking</em>
+                <strong>$55.30</strong>
+                <u class="color-red-dark">Expires Soon</u>
+            </ion-slide>
+            <ion-slide>
+                <img class="responsive-image" src="assets/pictures/4t.jpg" alt="img">
+                <em>Highway Drive</em>
+                <strong>$55.30</strong>
+                <u class="color-green-dark">Free Shipping</u>
+            </ion-slide>
+            <ion-slide>
+                <img class="responsive-image" src="assets/pictures/5t.jpg" alt="img">
+                <em>Ocean Escape</em>
+                <strong>$55.30</strong>
+                <u class="color-blue-dark">5% Discount</u>
+            </ion-slide>
+            <ion-slide>
+                <img class="responsive-image" src="assets/pictures/6t.jpg" alt="img">
+                <em>Skate Parking</em>
+                <strong>$55.30</strong>
+                <u class="color-red-dark">Expires Soon</u>
+            </ion-slide>
+    </ion-slides>
+       
+
 </ion-content>

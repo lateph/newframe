@@ -3,9 +3,12 @@ page-login {
         background-image: url(../assets/imgs/2.jpg);
         background-size: cover;
         background-position: center center;
+        padding-bottom: 0px !important;
         // background-color: red;
         form{
             //overflow: auto;
+            position: relative;
+            z-index: 2;
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;

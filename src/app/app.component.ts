@@ -11,14 +11,36 @@ import { Settings } from '../providers/providers';
   template: `<ion-menu [content]="content">
     <ion-header>
       <ion-toolbar>
-        <ion-title>Pages</ion-title>
+        <ion-title></ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content>
-      <ion-list>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          {{p.title}}
+      <div class="sidebar-divider">Navigation</div>
+      <ion-list no-lines>
+        <button menuClose ion-item>
+          <ion-icon name="home"></ion-icon>
+          Home
+        </button>
+        <button menuClose ion-item>
+          <ion-icon name="clipboard"></ion-icon>
+          Products
+        </button>
+        <button menuClose ion-item>
+          <ion-icon name="contacts"></ion-icon>
+          Teams
+        </button>
+        <button menuClose ion-item>
+          <ion-icon name="trending-up"></ion-icon>
+          Reports
+        </button>
+        <button menuClose ion-item>
+          <ion-icon name="cog"></ion-icon>
+          Setting
+        </button>
+        <button menuClose ion-item>
+          <ion-icon name="log-out"></ion-icon>
+          Logout
         </button>
       </ion-list>
     </ion-content>
@@ -27,7 +49,7 @@ import { Settings } from '../providers/providers';
   <ion-nav #content [root]="rootPage"></ion-nav>`
 })
 export class MyApp {
-  rootPage = FirstRunPage;
+  rootPage = 'LoginPage';
 
   @ViewChild(Nav) nav: Nav;
 
@@ -57,12 +79,12 @@ export class MyApp {
 
   initTranslate() {
     // Set the default language for translation strings, and the current language.
-    this.translate.setDefaultLang('en');
+    this.translate.setDefaultLang('id');
 
     if (this.translate.getBrowserLang() !== undefined) {
       this.translate.use(this.translate.getBrowserLang());
     } else {
-      this.translate.use('en'); // Set your language here
+      this.translate.use('id'); // Set your language here
     }
 
     this.translate.get(['BACK_BUTTON_TEXT']).subscribe(values => {

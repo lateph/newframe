@@ -23,7 +23,7 @@ export class OutletUpdateAccountPage {
   }
 
   doLogin() {
-    this.navCtrl.push('OutletTabsPage');
+    this.navCtrl.setRoot('OutletTabsPage');
     // return;
     // this.user.login(this.account).subscribe((resp) => {
     //   this.navCtrl.push(MainPage);

@@ -1,3 +1,11 @@
 page-outlet-tabs {
-
+    ion-tabs{
+        font-family: 'Roboto', sans-serif;
+        .tab-button[aria-selected=true]{
+            background-color: black;
+        }
+        ion-icon{
+            font-size: 2rem !important;
+        }
+    }
 }
