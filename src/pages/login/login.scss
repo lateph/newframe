@@ -14,6 +14,11 @@ page-login {
             align-items: center !important;
             height: 100%;
             width: 100%;
+            form, input, optgroup, select {
+                margin: 0;
+                font: inherit;
+                color: white;
+            }
             ion-item{
                 background: none;
                 padding-left: 0px;

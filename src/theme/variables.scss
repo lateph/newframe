@@ -33,11 +33,11 @@ $colors: (
 );
 
 $text-input-highlight-color-valid: rgba(255,255,255,0.1);
-$text-color:#FFFFFF;
+$text-color:rgba(0, 0, 0, 0.6);
 // $font-family-base : -apple-system, "Helvetica Neue", "Arial", sans-serif;
 // $font-family-md-base : "Helvetica Neue", "Arial", sans-serif;
 $toolbar-background: #0c1117;
-$background-color: #0c1117;
+$background-color: #FFFFFF;
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
@@ -61,10 +61,10 @@ $button-md-height: 50px;
 $button-md-font-size: 12px;
 $button-md-font-weight: 400;
 $button-md-text-transform	:none;
-$tabs-background : #0c1117;
-$tabs-tab-color-inactive: #FFFFFF;
-$tabs-md-tab-icon-color-active:white;
-$tabs-md-tab-icon-color: white;
+$tabs-background : #ecf0f1;
+$tabs-tab-color-inactive: rgba(0,0,0,0.7);
+$tabs-md-tab-icon-color-active:rgba(0,0,0,0.7);
+$tabs-md-tab-icon-color: rgba(0,0,0,0.7);
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here

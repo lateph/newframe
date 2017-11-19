@@ -17,7 +17,7 @@
 
 // dark
 .store-item strong {
-    color: #FFFFFF;
+    color: #1f1f1f;
 }
 //
 .dark-overlay {
@@ -154,6 +154,9 @@ h3 {
     font-size: 12px;
     font-style: normal;
     text-align: left;
+}
+.store-item em {
+    color: #666666;
 }
 
 .store-item .discount {
