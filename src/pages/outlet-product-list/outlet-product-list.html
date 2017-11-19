@@ -5,14 +5,63 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>outlet-product-list</ion-title>
+    <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Product List</ion-title>
+    
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addItem()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <div class="store-items">
+    <div class="store-item">
+        <a><img src="assets/pictures/1.jpg" alt="img"></a>
+        <a class="scale-hover store-item-button-1"><ion-icon name="share"></ion-icon></a>
+        <a class="scale-hover store-item-button-2"><ion-icon name="cart"></ion-icon></a>
+        <a class="scale-hover store-item-button-3"><ion-icon name="star"></ion-icon></a>
+        <strong>Pro - Site Template</strong>
+        <em>$11.00</em>
+        <em class="discount">$24.00</em>
+    </div>                    
 
+    <div class="store-item">
+        <a><img src="assets/pictures/2.jpg" alt="img"></a>
+        <a class="scale-hover store-item-button-1"><ion-icon name="share"></ion-icon></a>
+        <a class="scale-hover store-item-button-2"><ion-icon name="cart"></ion-icon></a>
+        <a class="scale-hover store-item-button-3"><ion-icon name="star"></ion-icon></a>
+        <strong>Wheels - Site Template</strong>
+        <em>$11.00</em>
+        <em class="offer"><i class="fa fa-truck"></i>Free Shipping</em>
+    </div>                    
+    <div class="store-item">
+        <a><img src="assets/pictures/3.jpg" alt="img"></a>
+        <a class="scale-hover store-item-button-1"><ion-icon name="share"></ion-icon></a>
+        <a class="scale-hover store-item-button-2"><ion-icon name="cart"></ion-icon></a>                        
+        <a class="scale-hover store-item-button-3"><ion-icon name="star"></ion-icon></a>                        
+        <strong>Circle - Site Template</strong>
+        <em>$11.00</em>
+        <em class="offer">9% Discount</em>
+    </div>                    
+
+    <div class="store-item">
+        <a><img src="assets/pictures/4.jpg" alt="img"></a>
+        <a class="scale-hover store-item-button-1"><ion-icon name="share"></ion-icon></a>
+        <a class="scale-hover store-item-button-2"><ion-icon name="cart"></ion-icon></a>
+        <a class="scale-hover store-item-button-3"><ion-icon name="star"></ion-icon></a>
+        <strong>Clean - Site Template</strong>
+        <em>$11.00</em>
+        <em class="offer"><i class="fa fa-gift"></i>1 + 1 Free</em>
+    </div>    
+    <div class="clear"></div>
+  </div>
 </ion-content>

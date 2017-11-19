@@ -14,6 +14,12 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// dark
+.store-item strong {
+    color: #FFFFFF;
+}
+//
 .dark-overlay {
     background-color: rgba(0,0,0,0.7);
 }
@@ -96,4 +102,131 @@ ion-menu{
             color: #828990;
         }
     }
+}
+.heading-strip {
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.bg-1 {
+    background-image: url(../assets/pictures/1.jpg);
+}
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+.heading-strip h3, .heading-strip h4 {
+    color: #FFFFFF;
+    z-index: 99;
+    position: relative;
+    margin: 0px;
+    line-height: 30px;
+}
+.heading-strip p {
+    color: #FFFFFF;
+    z-index: 99;
+    position: relative;
+    margin-bottom: 0px;
+    opacity: 0.7;
+    line-height: 30px;    
+    margin: 0px;    
+}
+.store-item {
+    width: 48%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+}
+.store-items img {
+    display: block;
+    width: 100%;
+}
+.store-item strong {
+    display: block;
+    font-weight: 500;
+    padding-top: 5px;
+    line-height: 30px;
+}
+.store-item em {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    text-align: left;
+}
+
+.store-item .discount {
+    position: absolute;
+    margin-top: -29px;
+    right: 0px;
+    text-decoration: line-through;
+}
+
+.store-item .discount {
+    color: #e74c3c;
+}
+
+.store-item:nth-last-child(even) {
+    margin-left: 4%;
+}
+
+.store-item .offer {
+    position: absolute;
+    margin-top: -29px;
+    right: 0px;
+}
+
+.store-item .offer {
+    color: #27ae60;
+}
+
+.store-item-button-3 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    right: 0px;
+    margin-top: -35px;
+    margin-right: 90px;
+    font-size: 12px;
+}
+
+.store-item-button-3 {
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.store-item-button-2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    right: 0px;
+    margin-top: -35px;
+    margin-right: 45px;
+    font-size: 12px;
+}
+
+.store-item-button-2 {
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.store-item-button-1 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    right: 0px;
+    margin-top: -35px;
+    font-size: 12px;
+}
+
+.store-item-button-1 {
+    color: #FFFFFF;
+    background-color: rgba(0,0,0,0.8);
 }

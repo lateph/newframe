@@ -1,0 +1,6 @@
+page-outlet-chart {
+    ion-card-header , ion-card-content{
+        background-color: map-get($colors, light);
+        font-weight: bold;
+    }
+}
