@@ -2,7 +2,7 @@ page-outlet-tabs {
     ion-tabs{
         font-family: 'Roboto', sans-serif;
         .tab-button[aria-selected=true]{
-            background-color: rgba(0,0,0,0.1);
+            background-color: black;
         }
         ion-icon{
             font-size: 2rem !important;
